@@ -1,0 +1,311 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+1. Vi Tri
+2. Kich Thuoc
+3. Mau sac
+4. Kieu Dang
+*/
+/*
+1. Lam tu ngoai vao trong
+2. Lam tu tren xuong duoi
+3. Tu tong quan den chi tiet
+*/
+.clear{
+    clear:both
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(143, 77, 77);
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;   
+    /* width : 100vw; */
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-arrow-down {
+    font-size: 12px;
+}
+
+#nav > li > a {
+    color: cornsilk;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+       
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a, 
+#nav .subnav li:hover a {
+    color: black;
+    background-color: burlywood;
+        
+}
+
+#nav .subnav {
+    display:none;
+    position: absolute;
+    background-color: rgb(248, 74, 11);
+    box-shadow: 0 0 10px darkgrey;
+    min-width: 140px;
+    top : 100%;   
+}
+
+
+#nav .subnav a {
+    color: rgb(255, 220, 220);
+    padding: 0 16px;
+    line-height: 38px;
+    display:block;        
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#header .search-button {
+    float:right;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+    color: cornsilk;
+}
+
+#header .search-button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* SLIDER */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assests/images/Clan-images/sanadabanner.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: cornsilk;
+    text-align: center;
+    /*Cách 1 Căn giữa text */
+    /* left:50%;
+    transform: translateX(-50%); */
+    
+    /*Cách 2 Căn giữa text*/
+    width: 100%;
+
+    /*Cách 3 Căn giữa text*/
+    /* left:0;
+    right:0; */
+}
+
+#slider .text-heading {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#slider .text-decription {
+    font-size: 19px;
+
+}
+
+/* CONTENT */
+
+#content {    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0
+}
+
+#content .section-heading {
+    font-size: 30px ;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+
+#content .section-sub-heading {
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic; 
+    opacity: 0.6;  
+}
+
+/* ABOUT */
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;    
+}
+
+#content .member-list { 
+    width: 800px;   
+    margin-top: 64px;
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+#content .member-item {    
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-img {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#content .member-name {
+    font-size: 18px;
+    font-style: bold; 
+    font-weight: 700; 
+}
+
+/* MAIN CHARACTERS */
+#content .main-characters-div {
+    background-color: black;
+    width: 100%;
+}
+#content .text-color {
+    color: cornsilk;
+}
+
+#content .characterlist {
+    background-color: cornsilk;
+    list-style: none;
+    margin-top: 40px ;    
+}
+
+#content .family-number {
+    background-color: indianred;
+    color: lavenderblush;
+    padding: 4px;
+    margin-left: 16px;
+}
+
+.characterlist li {
+    font-size: 15px; 
+    padding: 4px 16px; 
+    border-bottom: 1px solid #ddd; 
+}
+
+/*CHARACTER IMAGE*/
+.character-info {
+    margin: 32px -8px 48px;
+
+}
+
+.character-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+
+}
+
+.character-img {
+    width: 100%;
+    height: 280px; 
+    display: block;     
+}
+
+.character-img:hover {
+    opacity: 0.7;
+}
+
+
+.character-body {
+    background-color: lavenderblush;
+    padding: 16px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+
+.character-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+
+}
+
+.ch-casting {
+    margin-top: 10px;
+    color:rgb(143, 77, 77);
+
+}
+
+.ch-discription {
+    margin-top: 15px;
+
+}
+
+.show-info {
+    color: rgb(255, 220, 220);
+    background-color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.show-info:hover {
+    background-color: brown;
+}
+
+
+
+/* FOOTER */
+#footer {
+ 
+}
