@@ -116,7 +116,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assests/images/Clan-images/sanadabanner.jpg') top center / cover no-repeat;
+    background: url('../assests/images/Clan-images/sanadabanner.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -216,6 +216,7 @@ html {
     background-color: black;
     width: 100%;
 }
+
 #content .text-color {
     color: cornsilk;
 }
@@ -242,19 +243,17 @@ html {
 /*CHARACTER IMAGE*/
 .character-info {
     margin: 32px -8px 48px;
-
 }
 
 .character-item {
     float: left;
     width: calc(100%/3);
     padding: 0 8px;
-
 }
 
 .character-img {
     width: 100%;
-    height: 280px; 
+    height: 310px; 
     display: block;     
 }
 
@@ -262,7 +261,7 @@ html {
     opacity: 0.7;
 }
 
-
+/*CHARACTER BODY*/
 .character-body {
     background-color: lavenderblush;
     padding: 16px;
@@ -270,24 +269,19 @@ html {
     line-height: 1.4;
 }
 
-
-
 .character-heading {
     font-size: 20px;
     font-weight: 600;
     margin-top: 15px;
-
 }
 
 .ch-casting {
     margin-top: 10px;
     color:rgb(143, 77, 77);
-
 }
 
 .ch-discription {
     margin-top: 15px;
-
 }
 
 .show-info {
@@ -303,9 +297,161 @@ html {
     background-color: brown;
 }
 
-
-
 /* FOOTER */
 #footer {
  
+}
+
+/* MODEL */
+.model ,.model1, .model2, .model3 {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.openinfo {
+    display: flex;
+}
+
+.model-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 300px;
+    position: relative;
+    border: 1px solid red;
+}
+
+.model-close {
+    color: white ;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 20px;
+} 
+
+.model-close:hover { 
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* MODEL HEADER */
+.model-header {
+    background-color: red;
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    /* position: absoluter; */
+}
+
+.model-header i {
+    margin-right: 6px;
+}
+
+/* MODEL BODY */
+.model-label {
+    height: 100px;
+    background-color: black;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;    
+}
+
+.model-label> i {
+    margin-left: 42px;
+    margin-right: 16px;
+}
+
+.model-input {
+    margin-left: 16px;
+    border: 1px solid #ccc;
+    width: 350px;
+    font-size: 20px;
+}
+
+.md-send-button {
+    margin-left: 30px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-align: center;    
+}
+
+.md-send-button:hover {
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+/* MODEL CHARACTER INFO */
+/* .model-character-info {   
+    display: block;
+} */
+
+.model-character-name {
+    width: 300px;                
+}
+
+.model .character-name {
+    margin: 20px 20px 0px 20px;    
+}
+
+.model .character-img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px;     
+}
+
+.model-cr-bio {
+    float: left;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.model-cr-bio p {
+    text-align: justify;
+}
+    
+    
+/* MODEL FOOOTER */
+.md-footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center ;
+    justify-content:center ;
+    width: 100%;
+    position: relative;        
+}
+
+.md-footer i {
+    font-style: italic; 
+    margin-left: 10px;  
+}
+
+.md-footer p {
+    font-style: italic;
+    text-align: center;         
+}
+
+.help-div {
+    margin-left: 4px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;    
 }
