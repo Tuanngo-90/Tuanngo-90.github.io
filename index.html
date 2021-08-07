@@ -44,26 +44,26 @@
 
         <div id="content">
             <!--ABOUT-->
-            <div class="section-content">
+            <div class="row section-content">
                 <h2 class="section-heading">(真田丸)                
                 </h2>
                 <p class="section-sub-heading">Viết bởi: Kōki Mitani </br> Đạo diễn bởi: Takafumi Kimura </p>
                 <p class="about-text">Sanada Maru là một bộ phim truyền hình lịch sử Nhật Bản năm 2016 và bộ phim truyền hình NHK taiga thứ 55. Bộ truyện được đặt theo tên của Sanada Maru, một pháo đài được bảo vệ bởi Sanada trong Cuộc bao vây Osaka năm 1615. Được viết bởi Kōki Mitani, nó đóng vai chính Masato Sakai trong vai samurai Sanada Nobushige.</p>
-                    <div class="member-list">
-                        <div class="member-item">
+                    <div class="row member-list">
+                        <div class="col col-3 text-cen">
                             <p class="member-name">Gia tộc Toyotomi</p>
                             <img src="assests/images/Clan-images/Toyotomi-clan-symbol2.png" alt="" class="member-img">
                         </div>
-                        <div class="member-item">
+                        <div class="col col-3 text-cen">
                             <p class="member-name">Gia tộc Sanada</p>
                             <img src="assests/images/Clan-images/Sanada-clan-symbol1.png" alt="" class="member-img">
                         </div>
-                        <div class="member-item">
+                        <div class="col col-3 text-cen">
                             <p class="member-name">Gia tộc Tokugawa</p>
                             <img src="assests/images/Clan-images/Tokugawa-clan-symbol2.png" alt="" class="member-img">
                         </div>
-                        <div class="clear"></div>                       
                     </div>                
+                                    
             </div>
             <!--END ABOUT-->
 
@@ -79,8 +79,8 @@
                         <li>Gia tộc Tokugawa <span class="family-number">11 nhân vật</span></li>
                     </ul>                     
                      <!--CHARACTER IMAGE-->
-                    <div class="character-info">
-                        <div class="character-item">
+                    <div class="row character-info">
+                        <div class="col col-3 character-item">
                             <img src="assests/images/Damiyo/Yukimura.jpg" alt="Yukimura" class="character-img">
                             <div class="character-body">
                                 <h3 class="character-heading">Masato Sakai</h3>
@@ -89,7 +89,7 @@
                                 <button class="show-info js-showinfo-button1">THÊM...</button>
                             </div>
                         </div>
-                        <div class="character-item">
+                        <div class="col col-3 character-item">
                             <img src="assests/images/Damiyo/banner2.jpg" alt="Hideyoshi" class="character-img">
                             <div class="character-body">
                                 <h3 class="character-heading">Fumiyo Kohinata</h3>
@@ -98,7 +98,7 @@
                                 <button class="show-info js-showinfo-button2">THÊM...</button>
                             </div>
                         </div>
-                        <div class="character-item">
+                        <div class="col col-3 character-item">
                             <img src="assests/images/Damiyo/banner3.jpg" alt="Tokugawa" class="character-img">
                             <div class="character-body">
                                 <h3 class="character-heading">Seiyō Uchino</h3>
@@ -107,9 +107,8 @@
                                 <button class="show-info js-showinfo-button3">THÊM...</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
-
+                    
                 </div>
             </div> 
             <!--END MAIN CHARACTERS--> 
@@ -118,9 +117,33 @@
                 <h2 class="section-heading text-color">Liên Hệ               
                 </h2>
                 <p class = 'section-sub-heading text-color'>Hãy liên hệ với chúng tôi nếu bạn cần thông tin chi tiết hơn về bộ phim</p>
+                <div class="row contact-content">
+                    <div class="col col-2 contact-info">
+                        <p><i class="ti-location-pin"></i>Tokyo, Japan</p>
+                        <p><i class="ti-mobile"></i>Phone: +81 3173 219</p>
+                        <p><i class="ti-email"></i>Email: Sanadamaru@jp.co</p>
+                    </div>
+                    <div class="col col-2 contact-form">
+                        <form action ="">
+                            <div class="row">
+                                <div class="col col2">
+                                    <input type ="text" name ="" placeholder = "Name" required class = "form-control"> 
+                                </div>
+                                <div class="col col2">
+                                    <input type ="email" name ="" placeholder = "Email" required class = "form-control"> 
+                                </div>                                
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type ="text" name ="" placeholder = "Massage" required class = "form-control">
+                                </div>
+                            </div>
+                            <input type="submit" value = "SEND" class = "form-submit-btn mt-16">
+                        </form>
+                    </div>
+                </div>
             </div>
-            
-           
+
         </div>
 
         <div id="footer">

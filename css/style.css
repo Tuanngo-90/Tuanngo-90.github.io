@@ -1,9 +1,67 @@
+
+/* COMMON */
 /* RESET CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.clear{
+    clear:both
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(143, 77, 77);
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+/*css nâng cao*/
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;    
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 { 
+    width: calc(100%/3);
+}
+
+.col-4 { 
+    width: calc(100%/4);
+}
+
+.text-cen {
+    text-align: center;
+}
+
 /*
 1. Vi Tri
 2. Kich Thuoc
@@ -15,15 +73,9 @@
 2. Lam tu tren xuong duoi
 3. Tu tong quan den chi tiet
 */
-.clear{
-    clear:both
-}
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(143, 77, 77);
-}
 
+/* MAIN */
 #main {
 
 }
@@ -192,11 +244,6 @@ html {
     /* overflow: hidden; */
 }
 
-#content .member-item {    
-    float: left;
-    width: calc(100%/3);
-    text-align: center;
-}
 
 #content .member-img {
     width: 150px;
@@ -242,13 +289,8 @@ html {
 
 /*CHARACTER IMAGE*/
 .character-info {
-    margin: 32px -8px 48px;
-}
-
-.character-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .character-img {
@@ -295,6 +337,49 @@ html {
 
 .show-info:hover {
     background-color: brown;
+}
+
+/* CONTACT */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: white;
+}
+
+
+/*css nâng cao*/
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;    
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;    
+    outline: none; /*viền bên ngoài*/
+}
+
+.contact-form .form-submit-btn {
+    padding: 10px 16px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover{
+    background-color:red;
+    color: white;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -425,8 +510,7 @@ html {
 .model-cr-bio p {
     text-align: justify;
 }
-    
-    
+        
 /* MODEL FOOOTER */
 .md-footer {
     background-color: black;
