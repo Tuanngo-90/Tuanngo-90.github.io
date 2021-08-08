@@ -14,6 +14,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(143, 77, 77);
+    scroll-behavior: smooth;
 }
 
 .row {
@@ -23,6 +24,10 @@ html {
 
 .mt-8 {
     margin-top: 8px !important;
+}
+
+.ml-8 {
+    margin-left: -8px;
 }
 
 .mt-16 {
@@ -167,7 +172,7 @@ html {
 #slider {
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
+    padding-top: 50%;  /*chiều cao luôn ăn theo 50% chiều dài*/
     background: url('../assests/images/Clan-images/sanadabanner.jpg') top center / cover no-repeat;
 }
 
@@ -210,7 +215,7 @@ html {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0
+    padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -289,8 +294,7 @@ html {
 
 /*CHARACTER IMAGE*/
 .character-info {
-    margin-top: 32px;
-    margin-bottom: 48px;
+    margin-top: 32px;   
 }
 
 .character-img {
@@ -346,14 +350,14 @@ html {
 
 .contact-info {
     font-size: 18px;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     color: white;
 }
 
 
 /*css nâng cao*/
 .contact-info i[class*="ti-"] {
-    width: 30px;
+    width: 30px;    
     display: inline-block;    
 }
 
@@ -384,8 +388,31 @@ html {
 
 /* FOOTER */
 #footer {
- 
+    padding: 64px 16px;
+    text-align: center; 
+    background-color: black;    
 }
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .copyright a,
+#footer .social-list a {
+    text-decoration: none;
+    color: rgba(255,255,255, 0.6);
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(255,255,255, 0.4);
+}
+
+#footer .copyright {
+    padding-top: 15px;
+    color: rgba(255,255,255, 0.6);
+}
+
 
 /* MODEL */
 .model ,.model1, .model2, .model3 {
@@ -398,7 +425,6 @@ html {
     display: none;
     align-items: center;
     justify-content: center;
-
 }
 
 .openinfo {
